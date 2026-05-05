@@ -1,0 +1,59 @@
+generator client {
+  provider        = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String        @id @default(uuid())
+  email        String        @unique
+  firebaseUid  String?       @unique
+  role         Role          @default(INTERN)
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  documents    Document[]
+  chatSessions ChatSession[]
+}
+
+model Document {
+  id           String        @id @default(uuid())
+  title        String
+  fileUrls     String[]
+  allowedRoles Role[]
+  authorId     String
+  createdAt    DateTime      @default(now())
+  updatedAt    DateTime      @updatedAt
+  uploadedBy   User          @relation(fields: [authorId], references: [id])
+  chatSessions ChatSession[]
+}
+
+model ChatSession {
+  id         String    @id @default(uuid())
+  title      String    @default("New Chat")
+  documentId String
+  document   Document  @relation(fields: [documentId], references: [id], onDelete: Cascade)
+  userId     String
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  messages   Message[]
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+}
+
+model Message {
+  id            String      @id @default(uuid())
+  chatSessionId String
+  chatSession   ChatSession @relation(fields: [chatSessionId], references: [id], onDelete: Cascade)
+  role          String      // "user" or "assistant"
+  content       String
+  createdAt     DateTime    @default(now())
+}
+
+enum Role {
+  ADMIN
+  MANAGER
+  INTERN
+}

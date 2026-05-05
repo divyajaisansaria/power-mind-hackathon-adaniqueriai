@@ -1,0 +1,203 @@
+
+> notebook-lm-clone@0.1.0 dev
+> next dev
+
+  ▲ Next.js 14.2.3
+  - Local:        http://localhost:3000
+  - Environments: .env.local
+
+ ✓ Starting...
+ ⚠ Disabling SWC Minifer will not be an option in the next major version. Please report any issues you may be experiencing to https://github.com/vercel/next.js/issues
+ ✓ Ready in 1661ms
+ ○ Compiling / ...
+ ✓ Compiled / in 1048ms (966 modules)
+ GET / 200 in 1239ms
+ ✓ Compiled in 124ms (279 modules)
+ POST / 200 in 2325ms
+ POST / 200 in 459ms
+ POST / 200 in 532ms
+ ○ Compiling /dashboard ...
+ ✓ Compiled /dashboard in 615ms (1755 modules)
+ POST / 200 in 755ms
+ POST /dashboard 200 in 142ms
+ POST /dashboard 200 in 122ms
+ POST /dashboard 200 in 133ms
+ POST /dashboard 200 in 174ms
+ POST /dashboard 200 in 151ms
+ POST /dashboard 200 in 128ms
+ POST /dashboard 200 in 153ms
+ POST /dashboard 200 in 141ms
+ POST /dashboard 200 in 126ms
+ POST /dashboard 200 in 121ms
+ POST /dashboard 200 in 137ms
+ POST /dashboard 200 in 123ms
+ ✓ Compiled /notebook/[id] in 326ms (2356 modules)
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 184ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 199ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 166ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 199ms
+Error fetching chat sessions: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getChatSessionsAction (webpack-internal:///(action-browser)/./lib/actions.ts:348:92)
+    at async /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:39:418
+    at async rS (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:38:7978)
+    at async r2 (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:41:1251)
+    at async doRender (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:1438:30)
+    at async cacheEntry.responseCache.get.routeKind (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:1587:40)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/lib/start-server.js:141:13)
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 328ms
+Error fetching chat sessions: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getChatSessionsAction (webpack-internal:///(action-browser)/./lib/actions.ts:348:92)
+    at async /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:39:418
+    at async rS (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:38:7978)
+    at async r2 (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:41:1251)
+    at async doRender (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:1438:30)
+    at async cacheEntry.responseCache.get.routeKind (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:1587:40)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/lib/start-server.js:141:13)
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 917ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 1022ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 1361ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 1485ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 1616ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 4767ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 585ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 574ms
+ GET /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 175ms
+ ✓ Compiled /icon.svg in 117ms (1426 modules)
+ GET /icon.svg?1107777f414e2c53 200 in 149ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 735ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 144ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 122ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 149ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 157ms
+Error fetching chat sessions: TypeError: Cannot read properties of undefined (reading 'findMany')
+    at getChatSessionsAction (webpack-internal:///(action-browser)/./lib/actions.ts:348:92)
+    at async /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:39:418
+    at async rS (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:38:7978)
+    at async r2 (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/compiled/next-server/app-page.runtime.dev.js:41:1251)
+    at async doRender (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:1438:30)
+    at async cacheEntry.responseCache.get.routeKind (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:1587:40)
+    at async DevServer.renderToResponseWithComponentsImpl (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:1507:28)
+    at async DevServer.renderPageComponent (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:1924:24)
+    at async DevServer.renderToResponseImpl (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:1962:32)
+    at async DevServer.pipeImpl (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:920:25)
+    at async NextNodeServer.handleCatchallRenderRequest (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/next-server.js:272:17)
+    at async DevServer.handleRequestImpl (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/base-server.js:816:17)
+    at async /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/dev/next-dev-server.js:339:20
+    at async Span.traceAsyncFn (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/trace/trace.js:154:20)
+    at async DevServer.handleRequest (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/dev/next-dev-server.js:336:24)
+    at async invokeRender (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/lib/router-server.js:174:21)
+    at async handleRequest (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/lib/router-server.js:353:24)
+    at async requestHandlerImpl (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/lib/router-server.js:377:13)
+    at async Server.requestListener (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/lib/start-server.js:141:13)
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 118ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 128ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 118ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 126ms
+ POST /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 151ms
+ ✓ Compiled in 610ms (2356 modules)
+ ✓ Compiled in 363ms (2370 modules)
+ ✓ Compiled /_not-found in 357ms (2359 modules)
+ GET /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 404 in 418ms
+ GET /_next/static/css/app/layout.css?v=1777847747675 404 in 14ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 14ms
+ GET /_next/static/chunks/main-app.js?v=1777847747675 404 in 15ms
+ GET /_next/static/chunks/app/layout.js 404 in 14ms
+ ⨯ Failed to generate static paths for /notebook/[id]:
+Error: Cannot find module './vendor-chunks/next.js'
+Require stack:
+- /Users/poojanpatel/ps2_goated-group/frontend/.next/server/webpack-runtime.js
+- /Users/poojanpatel/ps2_goated-group/frontend/.next/server/app/notebook/[id]/page.js
+- /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/require.js
+- /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/load-components.js
+- /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/build/utils.js
+- /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/dev/static-paths-worker.js
+- /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/compiled/jest-worker/processChild.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1420:15)
+    at /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)
+    at Module._load (node:internal/modules/cjs/loader:1226:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+    at mod.require (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16) {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/poojanpatel/ps2_goated-group/frontend/.next/server/webpack-runtime.js',
+    '/Users/poojanpatel/ps2_goated-group/frontend/.next/server/app/notebook/[id]/page.js',
+    '/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/require.js',
+    '/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/load-components.js',
+    '/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/build/utils.js',
+    '/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/dev/static-paths-worker.js',
+    '/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/compiled/jest-worker/processChild.js'
+  ]
+}
+ GET /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 200 in 180ms
+ GET /_next/static/css/app/layout.css?v=1777847751000 404 in 17ms
+ GET /_next/static/chunks/main-app.js?v=1777847751000 404 in 17ms
+ GET /_next/static/chunks/app-pages-internals.js 404 in 17ms
+ GET /_next/static/chunks/app/layout.js 404 in 16ms
+ GET /_next/static/chunks/app/notebook/%5Bid%5D/page.js 404 in 17ms
+ ✓ Compiled /icon.svg in 93ms (1427 modules)
+ GET /icon.svg?1107777f414e2c53 200 in 126ms
+ ⨯ Error: Cannot find module './vendor-chunks/tailwind-merge.js'
+Require stack:
+- /Users/poojanpatel/ps2_goated-group/frontend/.next/server/webpack-runtime.js
+- /Users/poojanpatel/ps2_goated-group/frontend/.next/server/app/notebook/[id]/page.js
+- /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/require.js
+- /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/load-components.js
+- /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/build/utils.js
+- /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/dev/static-paths-worker.js
+- /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/compiled/jest-worker/processChild.js
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1420:15)
+    at /Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/require-hook.js:55:36
+    at defaultResolveImpl (node:internal/modules/cjs/loader:1058:19)
+    at resolveForCJSWithHooks (node:internal/modules/cjs/loader:1063:22)
+    at Module._load (node:internal/modules/cjs/loader:1226:37)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:244:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1503:12)
+    at mod.require (/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:152:16) {
+  type: 'Error',
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/Users/poojanpatel/ps2_goated-group/frontend/.next/server/webpack-runtime.js',
+    '/Users/poojanpatel/ps2_goated-group/frontend/.next/server/app/notebook/[id]/page.js',
+    '/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/require.js',
+    '/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/load-components.js',
+    '/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/build/utils.js',
+    '/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/server/dev/static-paths-worker.js',
+    '/Users/poojanpatel/ps2_goated-group/frontend/node_modules/next/dist/compiled/jest-worker/processChild.js'
+  ],
+  page: '/notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071'
+}
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 551ms (2612 modules)
+ GET /notebook/3b413939-dcd1-4794-b0d2-a3ded7cd2071 500 in 771ms

@@ -1,0 +1,53 @@
+{
+  "name": "notebook-lm-clone",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.29.2",
+    "@prisma/adapter-pg": "^5.14.0",
+    "class-variance-authority": "^0.7.0",
+    "cloudinary": "^2.10.0",
+    "clsx": "^2.1.1",
+    "dotenv": "^17.4.2",
+    "firebase": "^12.12.1",
+    "framer-motion": "^11.1.7",
+    "lucide-react": "^0.378.0",
+    "next": "14.2.3",
+    "next-themes": "^0.4.6",
+    "pdfjs-dist": "^3.11.174",
+    "pg": "^8.20.0",
+    "radix-ui": "^1.0.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-markdown": "^10.1.0",
+    "react-resizable-panels": "^2.0.19",
+    "remark-gfm": "^4.0.1",
+    "tailwind-merge": "^2.3.0",
+    "tailwindcss-animate": "^1.0.7",
+    "zustand": "^4.5.2"
+  },
+  "devDependencies": {
+    "@prisma/client": "^5.14.0",
+    "@types/node": "^20.19.39",
+    "@types/pg": "^8.20.0",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.5.0",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8.5.13",
+    "prisma": "^5.14.0",
+    "tailwindcss": "^3.4.19",
+    "ts-node": "^10.9.2",
+    "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  }
+}

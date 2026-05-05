@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 20% 98%;
+    --foreground: 221 39% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 221 39% 11%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 221 39% 11%;
+    --primary: 250 100% 69%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 221 39% 11%;
+    --muted: 210 20% 96%;
+    --muted-foreground: 215 16% 47%;
+    --accent: 210 20% 96%;
+    --accent-foreground: 221 39% 11%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 210 20% 91%;
+    --input: 210 20% 96%;
+    --ring: 250 100% 69%;
+    --radius: 1rem;
+  }
+
+  .dark {
+    --background: 225 17% 7%;
+    --foreground: 210 20% 91%;
+    --card: 224 17% 12%;
+    --card-foreground: 210 20% 91%;
+    --popover: 224 17% 12%;
+    --popover-foreground: 210 20% 91%;
+    --primary: 250 100% 69%;
+    --primary-foreground: 210 20% 98%;
+    --secondary: 230 16% 16%;
+    --secondary-foreground: 210 20% 91%;
+    --muted: 223 16% 20%;
+    --muted-foreground: 218 11% 65%;
+    --accent: 223 16% 20%;
+    --accent-foreground: 210 20% 91%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 223 16% 20%;
+    --input: 218 16% 15%;
+    --ring: 250 100% 69%;
+  }
+}
+
+@layer utilities {
+  .bg-primary-gradient {
+    background: linear-gradient(135deg, #7B61FF 0%, #A78BFA 100%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-muted-foreground/20 rounded-full hover:bg-muted-foreground/30;
+}
+
+/* PDF.js Text Layer Styles */
+.pdfjs-text-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  opacity: 0.2;
+  line-height: 1.0;
+  mix-blend-mode: multiply;
+}
+
+.pdfjs-text-layer span {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0% 0%;
+}
+
+.pdfjs-text-layer ::selection {
+  background: rgba(0, 0, 255, 0.2);
+}
